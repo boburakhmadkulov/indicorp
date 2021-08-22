@@ -1,0 +1,1337 @@
+@font-face {
+  font-family: 'Font-bold';
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-regular';
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-black';
+  src: url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-extraBold';
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-light';
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-extraLight';
+  src: url("../fonts/Montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-medium';
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-semiBold';
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Font-thin';
+  src: url("../fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Font-regular', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #e5e5e53d;
+}
+
+button {
+  cursor: pointer;
+}
+
+section.sec1 {
+  background-image: url("../img/png/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2%;
+  height: 100vh;
+}
+
+section.sec1 .container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sec1 .container header div.he-left {
+  width: 20%;
+}
+
+section.sec1 .container header div.he-right {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.sec1 .container header div.he-right nav {
+  width: 50%;
+}
+
+section.sec1 .container header div.he-right nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+section.sec1 .container header div.he-right nav ul li a {
+  font-family: 'Font-semiBold', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+section.sec1 .container header div.he-right nav ul li:hover a {
+  color: #00A0C1;
+  border-bottom: 1px solid #00A0C1;
+}
+
+section.sec1 .container header div.he-right div {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sec1 .container header div.he-right div a .shopping {
+  width: 24px;
+  height: 23px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #252B42;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/shopping.svg");
+          mask-image: url("../img/svg/shopping.svg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.sec1 .container header div.he-right div a .shopping:hover {
+  background-color: #00A0C1;
+}
+
+section.sec1 .container header div.he-right div a .search {
+  width: 24px;
+  height: 24px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #252B42;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/search.svg");
+          mask-image: url("../img/svg/search.svg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.sec1 .container header div.he-right div a .search:hover {
+  background-color: #00A0C1;
+}
+
+section.sec1 .container header div.he-right div a .burger {
+  width: 24px;
+  height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #252B42;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/navbar-toggler.svg");
+          mask-image: url("../img/svg/navbar-toggler.svg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.sec1 .container header div.he-right div a .burger:hover {
+  background-color: #00A0C1;
+}
+
+section.sec1 .container .sec1-content div.sec1-top {
+  width: 50%;
+}
+
+section.sec1 .container .sec1-content div.sec1-top h1 {
+  font-family: 'Font-extraBold', sans-serif;
+  font-size: 58px;
+  line-height: 80px;
+  margin-top: 10%;
+  color: #252B42;
+  letter-spacing: 0.2px;
+}
+
+section.sec1 .container .sec1-content div.sec1-top p {
+  font-family: 'Font-medium', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-top: 10%;
+  width: 80%;
+}
+
+section.sec1 .container .sec1-content div.sec1-top div {
+  margin-top: 5%;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.sec1 .container .sec1-content div.sec1-top div button {
+  font-family: 'Font-bold', sans-serif;
+  border-radius: 37px;
+  width: 185px;
+  height: 48px;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+section.sec1 .container .sec1-content div.sec1-top div .btn-yellow {
+  background: transparent;
+  color: #FFA62B;
+  border: 1px solid #FFA62B;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec1 .container .sec1-content div.sec1-top div .btn-yellow:hover {
+  background-color: #FFA62B;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+section.sec1 .container .sec1-content div.sec1-top div .btn-cyan {
+  background: transparent;
+  color: #00A0C1;
+  border: 1px solid #00A0C1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec1 .container .sec1-content div.sec1-top div .btn-cyan:hover {
+  background-color: #00A0C1;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 328px;
+  height: 210px;
+  padding: 2%;
+  margin: 2%;
+  -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card:hover {
+  background-color: #00A0C1;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card:hover .portfolio {
+  background-color: #fff;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card:hover .magazin {
+  background-color: #fff;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card:hover .list {
+  background-color: #fff;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card:hover h1 {
+  color: #fff;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card:hover p {
+  color: rgba(255, 255, 255, 0.432);
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card .portfolio {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #00A0C1;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/portfolio.svg");
+          mask-image: url("../img/svg/portfolio.svg");
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 2%;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card .magazin {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #00A0C1;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/magazin.svg");
+          mask-image: url("../img/svg/magazin.svg");
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 2%;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card .list {
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #00A0C1;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/list.svg");
+          mask-image: url("../img/svg/list.svg");
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 2%;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card h1 {
+  font-family: 'Font-bold', sans-serif;
+  color: #252B42;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec1 .container .sec1-content div.sec1-bottom .card p {
+  font-family: 'Font-medium', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec2 .container .sec2-content {
+  margin-top: 20%;
+  padding-bottom: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sec2 .container .sec2-content h1 {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+section.sec2 .container .sec2-content p {
+  width: 50%;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+section.sec2 .container .sec2-content .box-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+section.sec2 .container .sec2-content .box-main .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 230px;
+  height: 209px;
+  background-color: #fff;
+}
+
+section.sec2 .container .sec2-content .box-main .box h1 {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+section.sec2 .container .sec2-content .box-main .box p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #737373;
+}
+
+section.sec3 .container .sec3-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sec3 .container .sec3-content h1 {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+section.sec3 .container .sec3-content p {
+  margin-top: 3%;
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+section.sec3 .container .sec3-content .boks-main {
+  padding-top: 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+section.sec3 .container .sec3-content .boks-main .boks {
+  width: 230px;
+  height: 321px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.sec3 .container .sec3-content .boks-main .boks h4 {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin: 8%;
+}
+
+section.sec3 .container .sec3-content .boks-main .boks h6 {
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin: 8%;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+section.sec3 .container .sec3-content .boks-main .boks img {
+  width: 100%;
+}
+
+section.sec4 .container .sec4-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.sec4 .container .sec4-content h1 {
+  width: 60%;
+  font-family: 'Font-bold', sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+section.sec4 .container .sec4-content h6 {
+  margin-top: 2%;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 70%;
+}
+
+section.sec4 .container .sec4-content div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+section.sec4 .container .sec4-content div div.left-sec4 {
+  background-image: url(../img/png/bg-btn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 442px;
+}
+
+section.sec4 .container .sec4-content div div.left-sec4 button {
+  border: none;
+  background-color: transparent;
+}
+
+section.sec4 .container .sec4-content div div.left-sec4 button img {
+  width: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec4 .container .sec4-content div div.left-sec4 button img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section.sec4 .container .sec4-content div div.right-sec4 {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.sec4 .container .sec4-content div div.right-sec4 h1 {
+  text-align: left;
+  width: 100%;
+  font-family: 'Font-bold', sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+section.sec4 .container .sec4-content div div.right-sec4 p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+section.sec4 .container .sec4-content div div.right-sec4 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+}
+
+section.sec4 .container .sec4-content div div.right-sec4 div div.the-quick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 85%;
+  margin: 0;
+}
+
+section.sec4 .container .sec4-content div div.right-sec4 div div.the-quick h6 {
+  width: 100%;
+  text-align: left;
+  font-family: 'Font-bold', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin: 0;
+}
+
+section.sec4 .container .sec4-content div div.right-sec4 div div.the-quick p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+section.sec5 {
+  background-image: url(../img/png/bg-line.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+}
+
+section.sec5 .container .brands {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sec5 .container .brands img {
+  width: 10%;
+  margin-top: 5%;
+}
+
+section.sec5 .container .sec5-bottom {
+  width: 100%;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.sec5 .container .sec5-bottom div {
+  background-color: #16697A;
+  width: 986px;
+  height: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sec5 .container .sec5-bottom div p {
+  font-family: 'Font-bold', sans-serif;
+  width: 30%;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #fff;
+}
+
+section.sec5 .container .sec5-bottom div div.input-b {
+  width: 50%;
+  padding: 0;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.sec5 .container .sec5-bottom div div.input-b input {
+  width: 70%;
+  height: 110%;
+  margin: 0;
+  border: none;
+  padding: 5%;
+  border-radius: 5px 0px 0px 5px;
+}
+
+section.sec5 .container .sec5-bottom div div.input-b input:focus {
+  border: none;
+  outline: none;
+}
+
+section.sec5 .container .sec5-bottom div div.input-b button {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  height: 110%;
+  width: 30%;
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 5%;
+  background-color: #FFA62B;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 0px 5px 5px 0px;
+  letter-spacing: 0.2px;
+}
+
+section.sec5 .container .sec5-bottom div div.input-b button:hover {
+  background-color: #fff;
+  color: #FFA62B;
+  border: 1px solid #FFA62B;
+}
+
+section.sec5 .container .sec5-bottom div div.input-b button:focus {
+  outline: none;
+}
+
+section.sec6 .container .sec6-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+section.sec6 .container .sec6-content h1 {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+section.sec6 .container .sec6-content h6 {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+  width: 50%;
+  margin-top: 2%;
+}
+
+section.sec6 .container .sec6-content .card-main_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box {
+  width: 328px;
+  height: 333px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box:hover {
+  background-color: #252B42;
+  -webkit-transform: scale(1.1, 1.2);
+          transform: scale(1.1, 1.2);
+  z-index: 1;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box:hover button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box:hover .phone {
+  background: #fff;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box:hover .location {
+  background: #fff;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box:hover .telegram {
+  background: #fff;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box:hover h3 {
+  color: #fff;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box:hover h1 {
+  color: #fff;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box .phone {
+  width: 72px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #00A0C1;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/phone.svg");
+          mask-image: url("../img/svg/phone.svg");
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box .location {
+  width: 72px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #00A0C1;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/location.svg");
+          mask-image: url("../img/svg/location.svg");
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box .telegram {
+  width: 72px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #00A0C1;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/telegram.svg");
+          mask-image: url("../img/svg/telegram.svg");
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box h3 {
+  margin-top: 3%;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box h1 {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin-top: 3%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box button {
+  font-family: 'Font-bold', sans-serif;
+  border: 1px solid #FFA62B;
+  border-radius: 5px;
+  width: 160px;
+  height: 44px;
+  margin-top: 3%;
+  background-color: transparent;
+  color: #FFA62B;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec6 .container .sec6-content .card-main_div .card-box button:hover {
+  background-color: #fff;
+  color: #252B42;
+  border: 1px solid #fff;
+}
+
+section.sec7 {
+  margin-top: 10%;
+}
+
+section.sec7 .sec7-top {
+  background-color: #fff;
+}
+
+section.sec7 .sec7-top .container .sec7-top-content {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.sec7 .sec7-top .container .sec7-top-content div h1 {
+  font-family: 'Font-bold', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+
+section.sec7 .sec7-top .container .sec7-top-content div h3 {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+section.sec7 .sec7-top .container .sec7-top-content button {
+  font-family: 'Font-bold', sans-serif;
+  background: #FFA62B;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #fff;
+  width: 160px;
+  height: 58px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.sec7 .sec7-top .container .sec7-top-content button:hover {
+  border: 1px solid #FFA62B;
+  color: #FFA62B;
+  background: transparent;
+}
+
+section.sec7 .sec7-bottom {
+  background: #16697A;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+section.sec7 .sec7-bottom .container .sec7-bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.sec7 .sec7-bottom .container .sec7-bottom-content ul .f-bold {
+  font-family: 'Font-body', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #FFF;
+}
+
+section.sec7 .sec7-bottom .container .sec7-bottom-content ul li {
+  margin-top: 1%;
+}
+
+section.sec7 .sec7-bottom .container .sec7-bottom-content ul li a {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #FFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+section.sec7 .sec7-bottom .container .sec7-bottom-content ul li a img {
+  height: 20px;
+}
+
+section.sec7 .sec7-bottom .container .sec7-bottom-content ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+footer {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+footer .container .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container .footer-content div {
+  width: 50%;
+}
+
+footer .container .footer-content div h1 {
+  font-family: 'Font-semiBold', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+footer .container .footer-content div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .container .footer-content div.links a {
+  margin-left: 2%;
+}
+
+footer .container .footer-content div.links a:hover i {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+footer .container .footer-content div.links a i {
+  font-size: 24px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+footer .container .footer-content div.links a .face {
+  color: #335BF5;
+}
+
+footer .container .footer-content div.links a .insta {
+  color: #E51F5A;
+}
+
+footer .container .footer-content div.links a .twit {
+  color: #21A6DF;
+}
+
+footer .container .footer-content div.links a .you {
+  color: #E42F08;
+}
+/*# sourceMappingURL=main.css.map */
