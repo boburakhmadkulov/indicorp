@@ -70,11 +70,14 @@ section.sec1 {
   background-image: url("../img/png/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 2%;
   height: 100vh;
 }
 
-section.sec1 .container header {
+section.sec1 header {
+  padding-top: 3%;
+}
+
+section.sec1 header .container .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,11 +93,19 @@ section.sec1 .container header {
           align-items: center;
 }
 
-section.sec1 .container header div.he-left {
+section.sec1 header .container .header-content div.he-left {
+  height: 100%;
   width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-section.sec1 .container header div.he-right {
+section.sec1 header .container .header-content div.he-right {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,13 +117,15 @@ section.sec1 .container header div.he-right {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-section.sec1 .container header div.he-right nav {
+section.sec1 header .container .header-content div.he-right nav {
   width: 50%;
 }
 
-section.sec1 .container header div.he-right nav ul {
+section.sec1 header .container .header-content div.he-right nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,7 +138,7 @@ section.sec1 .container header div.he-right nav ul {
   width: 100%;
 }
 
-section.sec1 .container header div.he-right nav ul li a {
+section.sec1 header .container .header-content div.he-right nav ul li a {
   font-family: 'Font-semiBold', sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -136,12 +149,12 @@ section.sec1 .container header div.he-right nav ul li a {
   border-bottom: 1px solid transparent;
 }
 
-section.sec1 .container header div.he-right nav ul li:hover a {
+section.sec1 header .container .header-content div.he-right nav ul li:hover a {
   color: #00A0C1;
   border-bottom: 1px solid #00A0C1;
 }
 
-section.sec1 .container header div.he-right div {
+section.sec1 header .container .header-content div.he-right div {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,7 +170,7 @@ section.sec1 .container header div.he-right div {
           align-items: center;
 }
 
-section.sec1 .container header div.he-right div a .shopping {
+section.sec1 header .container .header-content div.he-right div a .shopping {
   width: 24px;
   height: 23px;
   display: none;
@@ -178,11 +191,11 @@ section.sec1 .container header div.he-right div a .shopping {
   transition: all 0.2s ease;
 }
 
-section.sec1 .container header div.he-right div a .shopping:hover {
+section.sec1 header .container .header-content div.he-right div a .shopping:hover {
   background-color: #00A0C1;
 }
 
-section.sec1 .container header div.he-right div a .search {
+section.sec1 header .container .header-content div.he-right div a .search {
   width: 24px;
   height: 24px;
   display: none;
@@ -203,11 +216,11 @@ section.sec1 .container header div.he-right div a .search {
   transition: all 0.2s ease;
 }
 
-section.sec1 .container header div.he-right div a .search:hover {
+section.sec1 header .container .header-content div.he-right div a .search:hover {
   background-color: #00A0C1;
 }
 
-section.sec1 .container header div.he-right div a .burger {
+section.sec1 header .container .header-content div.he-right div a .burger {
   width: 24px;
   height: 14px;
   display: -webkit-box;
@@ -230,7 +243,7 @@ section.sec1 .container header div.he-right div a .burger {
   transition: all 0.2s ease;
 }
 
-section.sec1 .container header div.he-right div a .burger:hover {
+section.sec1 header .container .header-content div.he-right div a .burger:hover {
   background-color: #00A0C1;
 }
 
@@ -277,6 +290,7 @@ section.sec1 .container .sec1-content div.sec1-top div button {
   height: 48px;
   font-size: 14px;
   line-height: 28px;
+  margin-top: 5%;
 }
 
 section.sec1 .container .sec1-content div.sec1-top div .btn-yellow {
@@ -1333,5 +1347,104 @@ footer .container .footer-content div.links a .twit {
 
 footer .container .footer-content div.links a .you {
   color: #E42F08;
+}
+
+@media (max-width: 1398px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1243px) {
+  div.sec1-bottom {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sec1-content div.sec1-top {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .sec1-content div.sec1-top {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 680px) {
+  header {
+    background-color: #fff;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  header .container .header-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  header .container .header-content .he-left {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+  }
+  header .container .header-content .he-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .container .header-content .he-right nav {
+    height: 100vh !important;
+    width: 100% !important;
+  }
+  header .container .header-content .he-right nav ul {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+  }
+  header .container .header-content .he-right nav ul li {
+    margin-top: 1%;
+    text-align: center;
+  }
+  header .container .header-content .he-right nav ul li a {
+    font-size: 30px !important;
+    line-height: 45px;
+  }
+  header .container .header-content .he-right div {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    height: 40px !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  header .container .header-content .he-right div a .shopping {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    right: 30%;
+    top: 0;
+  }
+  header .container .header-content .he-right div a .search {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    right: 60%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
