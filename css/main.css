@@ -93,7 +93,139 @@ section.sec1 header .container .header-content {
           align-items: center;
 }
 
-section.sec1 header .container .header-content div.he-left {
+section.sec1 header .container .header-content .dis-none {
+  width: 100%;
+  height: 50px;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.sec1 header .container .header-content .dis-none div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sec1 header .container .header-content .dis-none div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+section.sec1 header .container .header-content .dis-none div a .shopping {
+  width: 24px;
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #737373;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/shopping.svg");
+          mask-image: url("../img/svg/shopping.svg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+section.sec1 header .container .header-content .dis-none div a .shopping:hover {
+  background-color: #00A0C1;
+}
+
+section.sec1 header .container .header-content .dis-none div a .search {
+  width: 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #737373;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/search.svg");
+          mask-image: url("../img/svg/search.svg");
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.sec1 header .container .header-content .dis-none div a .search:hover {
+  background-color: #00A0C1;
+}
+
+section.sec1 header .container .header-content .dis-none div a .burger {
+  width: 24px;
+  height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: #737373;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-image: url("../img/svg/navbar-toggler.svg");
+          mask-image: url("../img/svg/navbar-toggler.svg");
+  height: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section.sec1 header .container .header-content .dis-none div a .burger:hover {
+  background-color: #00A0C1;
+}
+
+section.sec1 header .container .header-content div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.sec1 header .container .header-content div div.he-left {
   height: 100%;
   width: 20%;
   display: -webkit-box;
@@ -105,7 +237,7 @@ section.sec1 header .container .header-content div.he-left {
           flex-direction: row;
 }
 
-section.sec1 header .container .header-content div.he-right {
+section.sec1 header .container .header-content div div.he-right {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,11 +253,11 @@ section.sec1 header .container .header-content div.he-right {
       flex-wrap: wrap;
 }
 
-section.sec1 header .container .header-content div.he-right nav {
+section.sec1 header .container .header-content div div.he-right nav {
   width: 50%;
 }
 
-section.sec1 header .container .header-content div.he-right nav ul {
+section.sec1 header .container .header-content div div.he-right nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +270,7 @@ section.sec1 header .container .header-content div.he-right nav ul {
   width: 100%;
 }
 
-section.sec1 header .container .header-content div.he-right nav ul li a {
+section.sec1 header .container .header-content div div.he-right nav ul li a {
   font-family: 'Font-semiBold', sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -149,12 +281,12 @@ section.sec1 header .container .header-content div.he-right nav ul li a {
   border-bottom: 1px solid transparent;
 }
 
-section.sec1 header .container .header-content div.he-right nav ul li:hover a {
+section.sec1 header .container .header-content div div.he-right nav ul li:hover a {
   color: #00A0C1;
   border-bottom: 1px solid #00A0C1;
 }
 
-section.sec1 header .container .header-content div.he-right div {
+section.sec1 header .container .header-content div div.he-right div {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,7 +302,7 @@ section.sec1 header .container .header-content div.he-right div {
           align-items: center;
 }
 
-section.sec1 header .container .header-content div.he-right div a .shopping {
+section.sec1 header .container .header-content div div.he-right div a .shopping {
   width: 24px;
   height: 23px;
   display: none;
@@ -191,11 +323,11 @@ section.sec1 header .container .header-content div.he-right div a .shopping {
   transition: all 0.2s ease;
 }
 
-section.sec1 header .container .header-content div.he-right div a .shopping:hover {
+section.sec1 header .container .header-content div div.he-right div a .shopping:hover {
   background-color: #00A0C1;
 }
 
-section.sec1 header .container .header-content div.he-right div a .search {
+section.sec1 header .container .header-content div div.he-right div a .search {
   width: 24px;
   height: 24px;
   display: none;
@@ -216,11 +348,11 @@ section.sec1 header .container .header-content div.he-right div a .search {
   transition: all 0.2s ease;
 }
 
-section.sec1 header .container .header-content div.he-right div a .search:hover {
+section.sec1 header .container .header-content div div.he-right div a .search:hover {
   background-color: #00A0C1;
 }
 
-section.sec1 header .container .header-content div.he-right div a .burger {
+section.sec1 header .container .header-content div div.he-right div a .burger {
   width: 24px;
   height: 14px;
   display: -webkit-box;
@@ -243,7 +375,7 @@ section.sec1 header .container .header-content div.he-right div a .burger {
   transition: all 0.2s ease;
 }
 
-section.sec1 header .container .header-content div.he-right div a .burger:hover {
+section.sec1 header .container .header-content div div.he-right div a .burger:hover {
   background-color: #00A0C1;
 }
 
@@ -471,7 +603,7 @@ section.sec1 .container .sec1-content div.sec1-bottom .card p {
 }
 
 section.sec2 .container .sec2-content {
-  margin-top: 20%;
+  margin-top: 30%;
   padding-bottom: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,6 +615,8 @@ section.sec2 .container .sec2-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.sec2 .container .sec2-content h1 {
@@ -523,6 +657,7 @@ section.sec2 .container .sec2-content .box-main {
 }
 
 section.sec2 .container .sec2-content .box-main .box {
+  margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,6 +760,7 @@ section.sec3 .container .sec3-content .boks-main .boks {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 2%;
 }
 
 section.sec3 .container .sec3-content .boks-main .boks h4 {
@@ -846,7 +982,6 @@ section.sec5 .container .brands {
 }
 
 section.sec5 .container .brands img {
-  width: 10%;
   margin-top: 5%;
 }
 
@@ -1239,6 +1374,8 @@ section.sec7 .sec7-bottom .container .sec7-bottom-content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.sec7 .sec7-bottom .container .sec7-bottom-content ul .f-bold {
@@ -1292,7 +1429,7 @@ footer .container .footer-content {
 }
 
 footer .container .footer-content div {
-  width: 50%;
+  width: 70%;
 }
 
 footer .container .footer-content div h1 {
@@ -1304,6 +1441,7 @@ footer .container .footer-content div h1 {
 }
 
 footer .container .footer-content div.links {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1311,9 +1449,9 @@ footer .container .footer-content div.links {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .container .footer-content div.links a {
@@ -1374,14 +1512,22 @@ footer .container .footer-content div.links a .you {
   }
 }
 
-@media (max-width: 680px) {
-  header {
+@media (max-width: 801px) {
+  section.sec1 {
+    height: auto;
+  }
+  section.sec1 header {
+    width: 100% !important;
     background-color: #fff;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
-  header .container .header-content {
+  section.sec1 header .container .header-content {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1389,22 +1535,44 @@ footer .container .footer-content div.links a .you {
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
-  header .container .header-content .he-left {
-    position: absolute;
-    top: 3%;
-    left: 5%;
+  section.sec1 header .container .header-content .dis-none {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
-  header .container .header-content .he-right {
+  section.sec1 header .container .header-content .dis-none a {
+    width: 30%;
+  }
+  section.sec1 header .container .header-content .dis-none div {
+    width: 40% !important;
+  }
+  section.sec1 header .container .header-content div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.sec1 header .container .header-content div .he-left {
+    display: none !important;
+  }
+  section.sec1 header .container .header-content div .he-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  header .container .header-content .he-right nav {
+  section.sec1 header .container .header-content div .he-right nav {
     height: 100vh !important;
-    width: 100% !important;
   }
-  header .container .header-content .he-right nav ul {
+  section.sec1 header .container .header-content div .he-right nav ul {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -1416,35 +1584,156 @@ footer .container .footer-content div.links a .you {
     height: 100%;
     width: 100%;
   }
-  header .container .header-content .he-right nav ul li {
-    margin-top: 1%;
+  section.sec1 header .container .header-content div .he-right nav ul li {
     text-align: center;
   }
-  header .container .header-content .he-right nav ul li a {
+  section.sec1 header .container .header-content div .he-right nav ul li a {
     font-size: 30px !important;
     line-height: 45px;
+    font-family: 'Font-regular', sans-serif !important;
   }
-  header .container .header-content .he-right div {
-    position: absolute;
-    top: 3%;
-    right: 4%;
-    height: 40px !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+  section.sec1 header .container .header-content div .he-right div {
+    display: none !important;
   }
-  header .container .header-content .he-right div a .shopping {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    right: 30%;
-    top: 0;
+  section.sec7 .sec7-bottom .container .sec7-bottom-content ul {
+    margin: 4% 2%;
   }
-  header .container .header-content .he-right div a .search {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    right: 60%;
+}
+
+@media (max-width: 1423px) {
+  section.sec1 {
+    height: auto;
+  }
+}
+
+@media (max-width: 1022px) {
+  section.sec2 .container .sec2-content .box-main {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section.sec3 .container .sec3-content .boks-main {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section.sec6 .container .sec6-content .card-main_div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 780px) {
+  section.sec4 .container .sec4-content div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.sec4 .container .sec4-content div div.left-sec4 {
+    width: 100%;
+    height: 250px;
+  }
+  section.sec4 .container .sec4-content div div.right-sec4 {
+    width: 100%;
+  }
+  section.sec4 .container .sec4-content div div.right-sec4 h1 {
+    margin-top: 2%;
+  }
+  section.sec4 .container .sec4-content div div.right-sec4 p {
+    margin-top: 2%;
+  }
+  section.sec4 .container .sec4-content div div.right-sec4 div {
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 1000px) {
+  section.sec5 .container .sec5-bottom div {
+    width: 100%;
+    height: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.sec5 .container .sec5-bottom div p {
+    text-align: center;
+    width: 70%;
+  }
+  section.sec5 .container .sec5-bottom div div.input-b {
+    height: 50px !important;
+    width: 100% !important;
+    margin-top: 2%;
+    padding: 0 !important;
+  }
+  section.sec5 .container .sec5-bottom div div.input-b input {
+    height: 100% !important;
+    width: 70% !important;
+    padding: 2% !important;
+  }
+  section.sec5 .container .sec5-bottom div div.input-b button {
+    height: 100% !important;
+    margin: 0 !important;
+    width: 30% !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 390px) {
+  section.sec5 .container .sec5-bottom div p {
+    width: 100%;
+  }
+  section.sec5 .container .sec5-bottom div div.input-b {
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 638px) {
+  section.sec5 .container .brands {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section.sec5 .container .brands img {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 540px) {
+  section.sec7 .sec7-top .container .sec7-top-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.sec7 .sec7-top .container .sec7-top-content div {
+    width: 100%;
+  }
+  section.sec7 .sec7-top .container .sec7-top-content div h1 {
+    margin-top: 2%;
+    text-align: center;
+  }
+  section.sec7 .sec7-top .container .sec7-top-content div h3 {
+    text-align: center;
+  }
+  section.sec7 .sec7-top .container .sec7-top-content button {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .container .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .container .footer-content div {
+    width: 100%;
+  }
+  footer .container .footer-content div.links {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=main.css.map */
