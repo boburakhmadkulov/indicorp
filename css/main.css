@@ -665,6 +665,7 @@ section.sec2 .container .sec2-content .box-main .box {
 }
 
 section.sec2 .container .sec2-content .box-main .box h1 {
+  text-align: center;
   font-family: 'Font-bold', sans-serif;
   font-size: 40px;
   line-height: 57px;
