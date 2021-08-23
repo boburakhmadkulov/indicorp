@@ -1021,6 +1021,18 @@ footer{
       }
     }
   }
+  section.sec2{
+    .container{
+      .sec2-content{
+        h1{
+          width: 90%;
+        }
+        p{
+          width: 80%;
+        }
+      }
+    }
+  }
 }
 
 
@@ -1029,7 +1041,6 @@ footer{
     height: auto;
     header{
       width: 100% !important;
-
       background-color: #fff;
       justify-content: center !important;
       .container{

@@ -1504,6 +1504,12 @@ footer .container .footer-content div.links a .you {
   section.sec4 .container .sec4-content h6 {
     width: 80%;
   }
+  section.sec2 .container .sec2-content h1 {
+    width: 90%;
+  }
+  section.sec2 .container .sec2-content p {
+    width: 80%;
+  }
 }
 
 @media (max-width: 801px) {
