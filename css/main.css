@@ -66,6 +66,11 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  border: none;
+  outline: none;
+}
+
 section.sec1 {
   background-image: url("../img/png/background.png");
   background-repeat: no-repeat;
@@ -423,23 +428,6 @@ section.sec1 .container .sec1-content div.sec1-top div button {
   font-size: 14px;
   line-height: 28px;
   margin-top: 5%;
-}
-
-section.sec1 .container .sec1-content div.sec1-top div .btn-yellow {
-  background: transparent;
-  color: #FFA62B;
-  border: 1px solid #FFA62B;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-section.sec1 .container .sec1-content div.sec1-top div .btn-yellow:hover {
-  background-color: #FFA62B;
-  color: #fff;
-  border: 1px solid transparent;
-}
-
-section.sec1 .container .sec1-content div.sec1-top div .btn-cyan {
   background: transparent;
   color: #00A0C1;
   border: 1px solid #00A0C1;
@@ -447,8 +435,8 @@ section.sec1 .container .sec1-content div.sec1-top div .btn-cyan {
   transition: all 0.3s ease;
 }
 
-section.sec1 .container .sec1-content div.sec1-top div .btn-cyan:hover {
-  background-color: #00A0C1;
+section.sec1 .container .sec1-content div.sec1-top div button:hover {
+  background-color: #FFA62B;
   color: #fff;
   border: 1px solid transparent;
 }
@@ -760,7 +748,7 @@ section.sec3 .container .sec3-content .boks-main .boks {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 section.sec3 .container .sec3-content .boks-main .boks h4 {
@@ -1379,7 +1367,7 @@ section.sec7 .sec7-bottom .container .sec7-bottom-content {
 }
 
 section.sec7 .sec7-bottom .container .sec7-bottom-content ul .f-bold {
-  font-family: 'Font-body', sans-serif;
+  font-family: 'Font-bold', sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.1px;
@@ -1510,6 +1498,12 @@ footer .container .footer-content div.links a .you {
   .sec1-content div.sec1-top {
     width: 100% !important;
   }
+  section.sec4 .container .sec4-content h1 {
+    width: 90%;
+  }
+  section.sec4 .container .sec4-content h6 {
+    width: 80%;
+  }
 }
 
 @media (max-width: 801px) {
@@ -1559,9 +1553,9 @@ footer .container .footer-content div.links a .you {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
@@ -1580,8 +1574,7 @@ footer .container .footer-content div.links a .you {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
-    padding-top: 5%;
-    height: 100%;
+    height: 80%;
     width: 100%;
   }
   section.sec1 header .container .header-content div .he-right nav ul li {
@@ -1589,7 +1582,7 @@ footer .container .footer-content div.links a .you {
   }
   section.sec1 header .container .header-content div .he-right nav ul li a {
     font-size: 30px !important;
-    line-height: 45px;
+    line-height: 30px;
     font-family: 'Font-regular', sans-serif !important;
   }
   section.sec1 header .container .header-content div .he-right div {
@@ -1611,9 +1604,22 @@ footer .container .footer-content div.links a .you {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  section.sec3 .container .sec3-content h1 {
+    width: 90%;
+  }
+  section.sec3 .container .sec3-content p {
+    width: 80%;
+  }
   section.sec3 .container .sec3-content .boks-main {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  section.sec6 .container .sec6-content h1 {
+    width: 90%;
+    text-align: center;
+  }
+  section.sec6 .container .sec6-content h6 {
+    width: 80%;
   }
   section.sec6 .container .sec6-content .card-main_div {
     -ms-flex-pack: distribute;
@@ -1624,9 +1630,9 @@ footer .container .footer-content div.links a .you {
 @media (max-width: 780px) {
   section.sec4 .container .sec4-content div {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   section.sec4 .container .sec4-content div div.left-sec4 {
     width: 100%;
